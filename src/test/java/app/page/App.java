@@ -29,7 +29,9 @@ public class App  extends BasePage{
     public static void start() throws MalformedURLException {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "android");
-        desiredCapabilities.setCapability("deviceName", "127.0.0.1:7555");
+       // desiredCapabilities.setCapability("deviceName", "127.0.0.1:7555"); //mumu模拟器
+        //emulator-5554
+        desiredCapabilities.setCapability("deviceName", "emulator-5554");
         desiredCapabilities.setCapability("appPackage", "com.xueqiu.android");
         desiredCapabilities.setCapability("appActivity", ".view.WelcomeActivityAlias");
         /* noreset：以下2种方式都可以 避免权限弹框
